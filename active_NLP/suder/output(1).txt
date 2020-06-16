@@ -1,0 +1,1 @@
+ LogisticRegression(multinomial), SuderNewspaper(4 sınıf): 150 query, batch_size=1    

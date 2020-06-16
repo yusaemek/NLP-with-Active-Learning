@@ -1,0 +1,13 @@
+Folder hepsiburada, mynet, phys_exchange and suder contains the results of the document classification with active learning. These folders also contains corresponding conf.py alipy.py scripts which are used for comparison of different active learning methods and plotting and generating confusion matrix etc.
+
+"labeling manuel" can be used to continue annotating named entites of the suder data.
+
+al_lib contains two Phython file which contains acitve learning modules. AL_wlib.PY can be used with skit-learn classifiers. The AL_LSTM will be modified to work with different keras sequential models, it is not ready yet.
+
+Named entity recognition folder contains the scripts that are used in the second semester. 
+	generator.py contains a class for keras.utils.Sequence to be used with keras_{fit, train, test}_generator.
+	labeller is used to annotate chosen sentences by active learning methods.
+	parsing.py prep.py word_embedding.py is used for parsing the suder cumhuriyet corpus, preprocess it and train a word embedding model respectively.
+	read_xml file is used to label randomly to create initial small corpus.
+	CRF.py contains the crf model.
+	al_rnn.py contains the main active learning loop with recurrent neural network.
